@@ -1,0 +1,23 @@
+{
+  "nombre": "Perro atropellado en Caballito",
+  "foto": "accidente_rivadavia.png",
+  "especie_raza": "Perro mestizo",
+  "sexo": "No especificado",
+  "edad": "No especificado",
+  "ubicacion": "Avenida Rivadavia 5800, Caballito",
+  "contacto": {
+    "nombre": "Marcos Herrera",
+    "telefono": "11 9988-4412",
+    "email": "mherrera23@hotmail.com"
+  },
+  "prioridad": "Alta",
+  "danos_visibles": "Fractura en una pata delantera",
+  "estado_general": "Herido, dificultad para moverse",
+  "contexto_peligro": "Atropellado por moto",
+  "num_animales": 1,
+  "estado_caso": "Rescate",
+  "adjuntos_extra": [],
+  "fecha_reporte": "2025-05-17 13:10:00",
+  "correo_original": "Asunto: Perro atropellado en Caballito\nADJUNTO: accidente_rivadavia.png\n\nHola equipo de Camperito Refugio,\n\nVi un accidente esta tarde que involucró a un perro mestizo blanco con manchas negras, de tamaño chico. Fue atropellado por una moto y quedó herido en la vereda de Avenida Rivadavia 5800, Caballito.\n\nDescripción de los hechos\n\n- Fecha y hora: 17 de mayo de 2025 a las 13:10 h.\n- Ubicación: Vereda de Av. Rivadavia 5800, frente a una farmacia.\n- Tipo de incidente:\n  - El perro fue embestido por una moto y tiene visible una fractura en una de sus patas delanteras.\n  - Ladraba y se arrastraba sin poder pararse.\n  - Algunas personas se acercaron pero nadie pudo ayudar.\n- Frecuencia: Es la primera vez que lo veo.\n\nDatos del testigo\n\n- Nombre: Marcos Herrera\n- Teléfono: 11 9988-4412\n- Correo: mherrera23@hotmail.com",
+  "id": "20250517_002"
+}

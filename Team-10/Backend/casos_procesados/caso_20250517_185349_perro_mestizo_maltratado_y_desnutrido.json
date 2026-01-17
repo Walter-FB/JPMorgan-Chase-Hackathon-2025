@@ -1,0 +1,25 @@
+{
+  "nombre": "Perro mestizo maltratado y desnutrido",
+  "foto": "/static/images/image.png",
+  "especie_raza": "Perro, mestizo",
+  "sexo": "No especificado",
+  "edad": "No especificado",
+  "ubicacion": "Calle San Martín 473, Barrio Los Pinos, Monte Grande",
+  "contacto": {
+    "nombre": "Laura Sofía Méndez",
+    "telefono": "+54 9 11 4321-9876",
+    "email": "laura.mendez89@gmail.com"
+  },
+  "prioridad": "Alta",
+  "danos_visibles": "Desnutrición, herida en pata trasera derecha",
+  "estado_general": "Maltratado, desnutrido",
+  "contexto_peligro": "Maltrato activo, sin acceso a agua ni comida",
+  "num_animales": 1,
+  "estado_caso": "Denuncia",
+  "adjuntos_extra": [
+    "WhatsApp Image 2025-05-17 at 5.36.06 PM"
+  ],
+  "fecha_reporte": "2025-05-17 14:42:14",
+  "correo_original": "Fecha: Sat, 17 May 2025 14:42:14 -0300\nDe: Bruno Decruz <brunodecruz.05@gmail.com>\n\nEstimado equipo de *Camperito Refugio*,\n\nMe dirijo a ustedes para *denunciar un caso de maltrato animal* que he\npresenciado y que involucra a un perro mestizo de pelaje marrón y blanco,\nde tamaño mediano (aprox. 12 kg), que se encuentra en la zona de *Calle San\nMartín 473, Barrio Los Pinos, Monte Grande*.\nDescripción de los hechos\n\n   -\n\n   *Fecha y hora aproximada:* 15 de mayo de 2025, entre las 18:30 h y las\n   19:15 h.\n   -\n\n   *Ubicación exacta:* Vereda de San Martín 473 (frente al edificio de\n   departamentos), Barrio Los Pinos.\n   -\n\n   *Tipo de maltrato observado:*\n   -\n\n      El animal permanece encadenado a un pilar sin acceso a agua ni comida.\n      -\n\n      Se escucharon gritos y golpes contra el cuerpo del perro por parte de\n      su dueño, un hombre de aproximadamente 40 años, situándose varias veces a\n      menos de un metro de distancia y agrediéndolo con periódicos.\n      -\n\n      El perro presenta signos de desnutrición (costillas marcadas, abdomen\n      hundido) y una herida reciente en su pata trasera derecha, con\nun aparente\n      vendaje sucio.\n      -\n\n   *Frecuencia:* He observado esta situación en tres días consecutivos (13,\n   14 y 15 de mayo), siempre en el mismo horario vespertino.\n\nDatos de contacto de testigo\n\n   -\n\n   *Nombre:* Laura Sofía Méndez\n   -\n\n   *Teléfono:* +54 9 11 4321-9876\n   -\n\n   *Correo:* laura.mendez89@gmail.com\n   [image: image.png]",
+  "id": "caso_20250517_185349"
+}

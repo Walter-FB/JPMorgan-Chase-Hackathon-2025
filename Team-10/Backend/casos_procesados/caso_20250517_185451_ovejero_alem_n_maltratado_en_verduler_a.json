@@ -1,0 +1,25 @@
+{
+  "nombre": "Ovejero alemán maltratado en verdulería",
+  "foto": "./Backend/images/maltrato_verduleria.png",
+  "especie_raza": "Perro, Ovejero Alemán",
+  "sexo": "No especificado",
+  "edad": "No especificado",
+  "ubicacion": "Verdulería 'Los Hermanos', Av. Arieta 3254, Villa Luzuriaga, La Matanza",
+  "contacto": {
+    "nombre": "Santiago Varela",
+    "telefono": "+54 9 11 5678-2244",
+    "correo": "svarela94@gmail.com"
+  },
+  "prioridad": "Alta",
+  "danos_visibles": "Herida sangrante en la oreja izquierda",
+  "estado_general": "Maltratado, Ansiedad",
+  "contexto_peligro": "Maltrato activo en comercio",
+  "num_animales": 1,
+  "estado_caso": "Denuncia",
+  "adjuntos_extra": [
+    "static/img/image.png"
+  ],
+  "fecha_reporte": "2025-05-17 15:18:03",
+  "correo_original": "Fecha: Sat, 17 May 2025 15:18:03 -0300  \nDe: Santiago Varela <svarela94@gmail.com>  \n\nEstimado equipo de *Camperito Refugio*,  \n\nLes escribo para *reportar un caso urgente de maltrato animal* que presencié en un comercio del barrio de *Villa Luzuriaga, La Matanza*. El incidente involucra a un perro grande, tipo ovejero alemán, que aparentemente pertenece a los dueños de una verdulería ubicada en *Av. Arieta 3254*.  \n\nDescripción de los hechos  \n\n-  \n  *Fecha y hora aproximada:* 16 de mayo de 2025, alrededor de las 17:45 h.  \n-  \n  *Ubicación exacta:* Vereda y parte trasera de la verdulería “Los Hermanos”, Av. Arieta 3254, Villa Luzuriaga.  \n-  \n  *Tipo de maltrato observado:*  \n  -  \n    El perro fue golpeado fuertemente con un palo de escoba tras derribar una caja de bananas.  \n  -  \n    Se lo dejó atado por más de 6 horas sin agua, ladrando en forma continua y con signos de ansiedad.  \n  -  \n    Le observé una herida sangrante en la oreja izquierda.  \n  -  \n    Los empleados dijeron “es bruto, pero no lo mata nadie” y se rieron.  \n-  \n  *Frecuencia:* Hablo seguido con vecinos de la zona que aseguran que el maltrato es habitual, sobre todo por las tardes.\n\nDatos de contacto del testigo  \n\n-  \n  *Nombre:* Santiago Varela  \n-  \n  *Teléfono:* +54 9 11 5678-2244  \n-  \n  *Correo:* svarela94@gmail.com  \n[image: image.png]  \n\nImágenes guardadas en:  \n`./Backend/images/maltrato_verduleria.png`",
+  "id": "caso_20250517_185451"
+}

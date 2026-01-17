@@ -1,0 +1,23 @@
+{
+  "nombre": "Labrador abandonado en obra",
+  "foto": "/static/img/abandonado_obra_1.png",
+  "especie_raza": "Perro, Labrador",
+  "sexo": "Macho",
+  "edad": "Adulto",
+  "ubicacion": "Av. Mitre 1020, Quilmes Oeste, frente al supermercado Día",
+  "contacto": "Rocío Benítez, 11 6677-8899, rocio.benitez87@gmail.com",
+  "prioridad": "Media",
+  "danos_visibles": "Herida superficial en el cuello",
+  "estado_general": "Deshidratado",
+  "contexto_peligro": "Obra en construcción abandonada",
+  "num_animales": 1,
+  "estado_caso": "Denuncia",
+  "adjuntos_extra": [
+    "/static/img/WhatsApp Image 2025-05-17 at 5.36.07 PM (1).jpeg",
+    "/static/img/WhatsApp Image 2025-05-17 at 5.36.07 PM.jpeg",
+    "/static/img/WhatsApp Image 2025-05-17 at 5.36.06 PM.jpeg"
+  ],
+  "fecha_reporte": "2025-05-17 12:15:09",
+  "correo_original": "Fecha: Sat, 17 May 2025 12:15:09 -0300\nDe: Rocío Benítez <rocio.benitez87@gmail.com>\n\nEstimado equipo de *Camperito Refugio*,\n\nLes escribo para informar sobre un caso preocupante de abandono animal. Desde hace dos días he visto a un *perro labrador adulto, color negro*, que deambula sin supervisión en una *obra en construcción* abandonada en *Av. Mitre 1020, Quilmes Oeste*.\n\nDescripción de los hechos\n\n- *Fecha y hora aproximada:* 16 y 17 de mayo de 2025, entre las 10:00 h y 13:00 h.\n- *Ubicación exacta:* Dentro del predio de una obra abandonada en Av. Mitre 1020, frente al supermercado Día.\n- *Situación observada:*\n  - El perro duerme entre escombros y tiene una herida superficial en el cuello.\n  - Come basura de la vereda.\n  - Se nota deshidratado, jadea incluso en sombra.\n- *Frecuencia:* Lo vi en la misma zona por lo menos en 4 ocasiones.\n\nDatos de contacto del testigo\n\n- *Nombre:* Rocío Benítez\n- *Teléfono:* 11 6677-8899\n- *Correo:* rocio.benitez87@gmail.com\n\n[image: image.png]\n\nImágenes guardadas en:  \n`WhatsApp Image 2025-05-17 at 5.36.07 PM (1).jpeg./Backend/images/abandonado_obra_1.png`",
+  "id": "20250517_001"
+}

@@ -1,0 +1,731 @@
+/* Estilos generales */
+:root {
+  --color-alta: #e74c3c;
+  --color-media: #f39c12;
+  --color-baja: #2ecc71;
+  --color-oscuro: #2c3e50;
+  --color-claro: #ecf0f1;
+  --color-acento: #3498db;
+  --color-texto: #34495e;
+  --sombra: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+  --transicion: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--color-texto);
+  background-color: #f5f7fa;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-acento);
+}
+
+/* Header */
+header {
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: var(--sombra);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo i {
+  font-size: 2rem;
+  color: var(--color-acento);
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-oscuro);
+}
+
+.notification {
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  transition: var(--transicion);
+}
+
+.notification.active {
+  background-color: var(--color-alta);
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+/* Main container */
+main {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Filtros y estadísticas */
+.filters {
+  margin-bottom: 2rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--sombra);
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.search-box i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transicion);
+  font-weight: 500;
+}
+
+.filter-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+.filter-buttons button.active {
+  background-color: var(--color-acento);
+  color: white;
+}
+
+.stat-counters {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+}
+
+.counter .count {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.counter .label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.counter-alta .count {
+  color: var(--color-alta);
+}
+
+.counter-media .count {
+  color: var(--color-media);
+}
+
+.counter-baja .count {
+  color: var(--color-baja);
+}
+
+/* Secciones de prioridad */
+.priority-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-title i {
+  font-size: 1.2rem;
+}
+
+#alta-prioridad .section-title {
+  color: var(--color-alta);
+}
+
+#media-prioridad .section-title {
+  color: var(--color-media);
+}
+
+#baja-prioridad .section-title {
+  color: var(--color-baja);
+}
+
+/* Accordion de casos */
+.casos-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.caso-accordion {
+  background-color: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: var(--transicion);
+}
+
+.caso-header-compacto {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+  transition: var(--transicion);
+}
+
+.caso-header-compacto:hover {
+  background-color: #f9f9f9;
+}
+
+.caso-resumen {
+  flex-grow: 1;
+  margin: 0 1rem;
+}
+
+.caso-resumen h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.caso-estado-mini {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.caso-estado-mini i {
+  color: var(--color-acento);
+  font-size: 0.85rem;
+}
+
+.caso-ubicacion-mini {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.caso-toggle {
+  margin-left: auto;
+  padding: 0.5rem;
+  transition: var(--transicion);
+}
+
+.caso-toggle i {
+  color: #999;
+}
+
+.caso-accordion.active .caso-toggle i {
+  transform: rotate(180deg);
+}
+
+.caso-contenido {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.caso-accordion.active .caso-contenido {
+  max-height: 1000px; /* Altura máxima para la animación */
+  border-top: 1px solid #eee;
+}
+
+.caso-prioridad {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  min-width: 70px;
+  text-align: center;
+}
+
+.caso-prioridad.alta {
+  background-color: var(--color-alta);
+}
+
+.caso-prioridad.media {
+  background-color: var(--color-media);
+}
+
+.caso-prioridad.baja {
+  background-color: var(--color-baja);
+}
+
+.caso-fecha {
+  font-size: 0.8rem;
+  color: #777;
+  padding: 0 1rem;
+}
+
+.caso-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.caso-img-container {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+}
+
+.caso-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caso-details {
+  flex: 1;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.caso-data {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-radius: var(--border-radius);
+  min-height: 2.5rem;
+}
+
+.caso-data:empty {
+  display: none;
+}
+
+.caso-data i {
+  margin-right: 0.5rem;
+  width: 20px;
+  text-align: center;
+  color: #888;
+}
+
+.caso-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.btn-ver-caso {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-acento);
+  color: white;
+  border-radius: var(--border-radius);
+  transition: var(--transicion);
+}
+
+.btn-ver-caso:hover {
+  background-color: #2980b9;
+}
+
+.btn-decision {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transicion);
+  font-weight: 500;
+}
+
+.btn-aceptar {
+  background-color: var(--color-baja);
+  color: white;
+}
+
+.btn-rechazar {
+  background-color: #f1f1f1;
+  color: #666;
+}
+
+.btn-aceptar:hover {
+  background-color: #27ae60;
+}
+
+.btn-rechazar:hover {
+  background-color: #e0e0e0;
+}
+
+/* Página de detalle de caso */
+.caso-nav {
+  display: flex;
+  align-items: center;
+}
+
+.btn-volver {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.caso-status-banner {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-weight: 500;
+  border-left: 4px solid #ccc;
+}
+
+.caso-status-banner.decidido {
+  background-color: #e8f4fd;
+  border-left-color: var(--color-acento);
+}
+
+.caso-status-banner.aceptado {
+  background-color: #e8f8f5;
+  border-left-color: var(--color-baja);
+}
+
+.caso-status-banner.rechazado {
+  background-color: #fdf7f7;
+  border-left-color: #ccc;
+}
+
+.caso-detalle-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.caso-detalle-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.caso-panel-izquierdo, .caso-panel-derecho {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--sombra);
+  padding: 1.5rem;
+}
+
+.caso-foto-container {
+  margin-bottom: 1.5rem;
+}
+
+#caso-foto-principal {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+
+.caso-fotos-adicionales {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.caso-foto-adicional {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.caso-info-principal {
+  margin-bottom: 1.5rem;
+}
+
+.caso-info-principal h2 {
+  margin-bottom: 1rem;
+  color: var(--color-oscuro);
+}
+
+.caso-datos-basicos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.caso-datos-basicos p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.caso-datos-basicos i {
+  width: 20px;
+  color: #888;
+}
+
+.caso-decision-box {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid #eee;
+}
+
+.caso-decision-box h3 {
+  margin-bottom: 1rem;
+  color: var(--color-oscuro);
+  text-align: center;
+}
+
+.caso-prioridad-selector, .caso-accion-selector {
+  margin-bottom: 1.5rem;
+}
+
+.caso-prioridad-selector label, .caso-accion-selector label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.selector-botones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-prioridad, .btn-accion {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transicion);
+  font-weight: 500;
+  background-color: #f1f1f1;
+}
+
+.btn-alta {
+  color: var(--color-alta);
+}
+
+.btn-media {
+  color: var(--color-media);
+}
+
+.btn-baja {
+  color: var(--color-baja);
+}
+
+.btn-aceptar {
+  color: var(--color-baja);
+}
+
+.btn-rechazar {
+  color: #777;
+}
+
+.btn-prioridad.selected, .btn-accion.selected {
+  color: white;
+}
+
+.btn-alta.selected {
+  background-color: var(--color-alta);
+}
+
+.btn-media.selected {
+  background-color: var(--color-media);
+}
+
+.btn-baja.selected {
+  background-color: var(--color-baja);
+}
+
+.btn-aceptar.selected {
+  background-color: var(--color-baja);
+}
+
+.btn-rechazar.selected {
+  background-color: #777;
+}
+
+.btn-guardar-decision {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transicion);
+  font-weight: 500;
+}
+
+.btn-guardar-decision:hover {
+  background-color: #2980b9;
+}
+
+.btn-guardar-decision:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.caso-info-detallada {
+  margin-bottom: 1.5rem;
+}
+
+.caso-info-detallada h3, .caso-correo-original h3 {
+  margin-bottom: 1rem;
+  color: var(--color-oscuro);
+}
+
+.info-seccion {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.info-seccion:last-child {
+  border-bottom: none;
+}
+
+.info-seccion h4 {
+  margin-bottom: 0.5rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.correo-container {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 0.9rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+  color: #888;
+}
+
+/* Animaciones */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(231, 76, 60, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+  }
+}
+
+/* Responsividad */
+@media (max-width: 992px) {
+  .caso-detalle-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-counters {
+    justify-content: start;
+  }
+  
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .caso-header-compacto {
+    flex-wrap: wrap;
+  }
+  
+  .caso-body {
+    flex-direction: column;
+  }
+  
+  .caso-img-container {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .caso-datos-basicos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para el logo en el header */
+.header-logo {
+  margin-left: auto;
+}
+
+.organizacion-logo {
+  height: 50px;
+  width: auto;
+  border-radius: 5px;
+} 

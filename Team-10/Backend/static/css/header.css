@@ -1,0 +1,49 @@
+/* Estilos para el nuevo header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.header-title {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.header-button {
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.header-button:hover {
+  background-color: #ed8936;
+}
+
+.header-session-container {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+} 

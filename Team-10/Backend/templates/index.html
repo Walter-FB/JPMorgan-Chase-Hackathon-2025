@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Priorización de Rescates - ONG</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-logo-section">
+                <img src="/static/img/logo.jpg" alt="Logo" class="header-logo-img">
+                <h1 class="header-title">El Campito Refugio</h1>
+            </div>
+            
+            <div id="no-session-button">
+                <button id="login-button" class="header-button">
+                    Iniciar sesión
+                </button>
+            </div>
+            
+            <div id="session-buttons" class="header-session-container hidden">
+                <button id="profile-button" class="header-button">
+                    Ver Perfil
+                </button>
+                <button id="logout-button" class="header-button">
+                    Cerrar Sesión
+                </button>
+            </div>
+        </div>
+        <div class="notification" id="notificacion"></div>
+    </header>
+
+    <main>
+        <div class="filters">
+            <div class="search-box">
+                <input type="text" id="filtro-busqueda" placeholder="Buscar...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="filter-buttons">
+                <button class="active" data-filter="todos">Todos</button>
+                <button data-filter="alta">Alta Prioridad</button>
+                <button data-filter="media">Media Prioridad</button>
+                <button data-filter="baja">Baja Prioridad</button>
+            </div>
+            <div class="stat-counters">
+                <div class="counter" id="total-casos">
+                    <span class="count">0</span>
+                    <span class="label">Total Casos</span>
+                </div>
+                <div class="counter counter-alta" id="casos-alta">
+                    <span class="count">0</span>
+                    <span class="label">Alta</span>
+                </div>
+                <div class="counter counter-media" id="casos-media">
+                    <span class="count">0</span>
+                    <span class="label">Media</span>
+                </div>
+                <div class="counter counter-baja" id="casos-baja">
+                    <span class="count">0</span>
+                    <span class="label">Baja</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="casos-container">
+            <!-- Contenedor de casos de alta prioridad -->
+            <div class="priority-section" id="alta-prioridad">
+                <h2 class="section-title"><i class="fas fa-exclamation-triangle"></i> Alta Prioridad</h2>
+                <div class="casos-accordion" id="accordion-alta"></div>
+            </div>
+
+            <!-- Contenedor de casos de media prioridad -->
+            <div class="priority-section" id="media-prioridad">
+                <h2 class="section-title"><i class="fas fa-exclamation"></i> Media Prioridad</h2>
+                <div class="casos-accordion" id="accordion-media"></div>
+            </div>
+
+            <!-- Contenedor de casos de baja prioridad -->
+            <div class="priority-section" id="baja-prioridad">
+                <h2 class="section-title"><i class="fas fa-info-circle"></i> Baja Prioridad</h2>
+                <div class="casos-accordion" id="accordion-baja"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Plantilla para cada tarjeta de caso desplegable -->
+    <template id="plantilla-caso">
+        <div class="caso-accordion">
+            <div class="caso-header-compacto">
+                <div class="caso-prioridad"></div>
+                <div class="caso-resumen">
+                    <h3 class="caso-titulo"></h3>
+                    <p class="caso-ubicacion-mini"><i class="fas fa-map-marker-alt"></i> <span></span></p>
+                </div>
+                <div class="caso-fecha"></div>
+                <div class="caso-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="caso-contenido">
+                <div class="caso-body">
+                    <div class="caso-img-container">
+                        <img class="caso-img" src="" alt="Foto del animal">
+                    </div>
+                    <div class="caso-details">
+                        <div class="caso-data caso-especie"></div>
+                        <div class="caso-data caso-sexo"></div>
+                        <div class="caso-data caso-edad"></div>
+                        <div class="caso-data caso-ubicacion-completa"></div>
+                        <div class="caso-data caso-estado"></div>
+                        <div class="caso-data caso-danos"></div>
+                        <div class="caso-data caso-peligro"></div>
+                        <div class="caso-data caso-contacto"></div>
+                    </div>
+                </div>
+                <div class="caso-footer">
+                    <a href="#" class="btn-ver-caso">Ver Detalles</a>
+                    <button class="btn-decision btn-aceptar" data-accion="aceptado">Aceptar</button>
+                    <button class="btn-decision btn-rechazar" data-accion="rechazado">Rechazar</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <footer>
+        <p>© 2023 Sistema de Priorización de Rescates - Desarrollado para ONGs de rescate animal</p>
+    </footer>
+
+    <script src="/static/js/header.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 

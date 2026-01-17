@@ -1,0 +1,19 @@
+{
+  "nombre": "Beagle abandonado",
+  "foto": "/static/img/beagle.jpg",
+  "especie_raza": "Perro, Beagle",
+  "sexo": "Macho",
+  "edad": "2-3 años",
+  "ubicacion": "Plaza de Palermo (cerca de Av. Santa Fe y Bullrich)",
+  "contacto": "María González, 1145678900, mariagonzalez@email.com",
+  "prioridad": "Media",
+  "danos_visibles": "Delgadez",
+  "estado_general": "Asustado pero manso, sin heridas visibles",
+  "contexto_peligro": "Abandonado",
+  "num_animales": 1,
+  "estado_caso": "Reportado",
+  "adjuntos_extra": [],
+  "fecha_reporte": "2025-05-17 14:42:14",
+  "correo_original": "Asunto: Beagle abandonado en Palermo\nADJUNTO: beagle.jpg\n\nHola, les escribo porque encontré un beagle abandonado en la plaza de Palermo (cerca de Av. Santa Fe y Bullrich).\nEs macho, de aproximadamente 2-3 años, no tiene collar ni identificación. Está algo delgado pero no tiene heridas visibles.\nSe deja acariciar y parece manso, aunque está asustado.\nLo encontré hoy temprano, está refugiado debajo de un banco de la plaza.\nPor favor contáctenme si pueden ayudar: María González, 1145678900, mariagonzalez@email.com",
+  "id": "20230501_001"
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Caso - Sistema de Priorización</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-logo-section">
+                <img src="/static/img/logo.jpg" alt="Logo" class="header-logo-img">
+                <h1 class="header-title">El Campito Refugio</h1>
+            </div>
+            
+            <div class="caso-nav">
+                <a href="/" class="btn-volver"><i class="fas fa-arrow-left"></i> Volver a Casos</a>
+            </div>
+            
+            <div id="no-session-button">
+                <button id="login-button" class="header-button">
+                    Iniciar sesión
+                </button>
+            </div>
+            
+            <div id="session-buttons" class="header-session-container hidden">
+                <button id="profile-button" class="header-button">
+                    Ver Perfil
+                </button>
+                <button id="logout-button" class="header-button">
+                    Cerrar Sesión
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="caso-detalle-container">
+        <div class="caso-status-banner" id="status-banner">
+            <!-- El contenido dinámico se cargará aquí -->
+        </div>
+
+        <div class="caso-detalle-grid">
+            <!-- Panel izquierdo - Foto e información principal -->
+            <div class="caso-panel-izquierdo">
+                <div class="caso-foto-container">
+                    <img id="caso-foto-principal" src="" alt="Foto del animal">
+                    <div class="caso-fotos-adicionales" id="fotos-adicionales">
+                        <!-- Fotos adicionales se cargarán aquí -->
+                    </div>
+                </div>
+                
+                <div class="caso-info-principal">
+                    <h2 id="caso-nombre">Cargando...</h2>
+                    <div class="caso-datos-basicos">
+                        <p><i class="fas fa-map-marker-alt"></i> <span id="caso-ubicacion">Cargando...</span></p>
+                        <p><i class="fas fa-calendar-alt"></i> <span id="caso-fecha">Cargando...</span></p>
+                        <p><i class="fas fa-dog"></i> <span id="caso-especie">Cargando...</span></p>
+                        <p><i class="fas fa-venus-mars"></i> <span id="caso-sexo">Cargando...</span></p>
+                        <p><i class="fas fa-birthday-cake"></i> <span id="caso-edad">Cargando...</span></p>
+                    </div>
+                </div>
+                
+                <div class="caso-decision-box" id="caso-decision-box">
+                    <h3>Toma de Decisión</h3>
+                    <div class="caso-prioridad-selector">
+                        <label>Confirmar Prioridad:</label>
+                        <div class="selector-botones">
+                            <button class="btn-prioridad btn-alta" data-prioridad="alta">Alta</button>
+                            <button class="btn-prioridad btn-media" data-prioridad="media">Media</button>
+                            <button class="btn-prioridad btn-baja" data-prioridad="baja">Baja</button>
+                        </div>
+                    </div>
+                    <div class="caso-accion-selector">
+                        <label>¿Puede intervenir el refugio?</label>
+                        <div class="selector-botones">
+                            <button class="btn-accion btn-aceptar" data-accion="aceptado">Sí, podemos ayudar</button>
+                            <button class="btn-accion btn-rechazar" data-accion="rechazado">No podemos en este momento</button>
+                        </div>
+                    </div>
+                    <button class="btn-guardar-decision" id="btn-guardar-decision" disabled>Guardar Decisión</button>
+                </div>
+            </div>
+
+            <!-- Panel derecho - Detalles y correo original -->
+            <div class="caso-panel-derecho">
+                <div class="caso-info-detallada">
+                    <h3>Información Detallada</h3>
+                    <div class="info-seccion">
+                        <h4><i class="fas fa-heartbeat"></i> Estado General</h4>
+                        <p id="caso-estado-general">Cargando...</p>
+                    </div>
+                    <div class="info-seccion">
+                        <h4><i class="fas fa-first-aid"></i> Daños Visibles</h4>
+                        <p id="caso-danos">Cargando...</p>
+                    </div>
+                    <div class="info-seccion">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Contexto/Peligro</h4>
+                        <p id="caso-peligro">Cargando...</p>
+                    </div>
+                    <div class="info-seccion">
+                        <h4><i class="fas fa-user"></i> Contacto del Reportante</h4>
+                        <p id="caso-contacto">Cargando...</p>
+                    </div>
+                </div>
+
+                <div class="caso-correo-original">
+                    <h3>Correo Original</h3>
+                    <div class="correo-container" id="correo-original">
+                        <p>Cargando correo original...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Sistema de Priorización de Rescates - Desarrollado para ONGs de rescate animal</p>
+    </footer>
+
+    <script>
+        // Pasar el ID del caso desde Flask a JavaScript
+        const idCaso = "{{ id_caso }}";
+    </script>
+    <script src="/static/js/header.js"></script>
+    <script src="/static/js/caso.js"></script>
+</body>
+</html> 
